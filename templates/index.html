@@ -1,0 +1,127 @@
+{% load static %} 
+{% load material_form %} 
+
+{% include 'material/includes/material_css.html' %}
+
+<main>
+	<div class="content">
+		<div class="row">
+			<h5>Lista de los 10 Repositorios Populares en Github</h5>
+			<div class="card">
+			    <div class="card-content">
+			    	<div class="results">
+			    		<div id="result_list_wrapper" class="dataTables_wrapper no-footer">
+			    			<table id="result_list" class="table bordered dataTable no-footer" role="grid">
+			    				<thead>
+			            			<tr role="row">
+			                			<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Ranking</span>
+			                    		</th>
+			                    		<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Nombre del Repositorio</span>
+			                    		</th>
+			                    		<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Stars</span>
+			                    		</th>
+			                    	</tr>
+			        			</thead>
+			        
+			        			<tbody>
+			        				{% for popular in popular_items_list %}
+			        				<tr class="row1 odd" role="row">
+			        					<th class="field-sort">{{ popular.sort }}</th>
+			        					<th class="field-repo_name">{{ popular.repo_name }}</th>
+			        					<th class="field-stars">{{ popular.stars }}</th>
+			        				</tr>
+			        				{% endfor %}
+			        			</tbody>
+			    			</table>
+			    		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h5>Lista de los 10 Repositorios Populares en Github con Colaboradores Colombianos</h5>
+			<div class="card">
+			    <div class="card-content">
+			    	<div class="results">
+			    		<div id="result_list_wrapper" class="dataTables_wrapper no-footer">
+			    			<table id="result_list" class="table bordered dataTable no-footer" role="grid">
+			    				<thead>
+			            			<tr role="row">
+			                			<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Ranking</span>
+			                    		</th>
+			                    		<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Nombre del Repositorio</span>
+			                    		</th>
+			                    		<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Stars</span>
+			                    		</th>
+			                    	</tr>
+			        			</thead>
+			        
+			        			<tbody>
+			        				{% for popular in colombians_items_list %}
+			        				<tr class="row1 odd" role="row">
+			        					<th class="field-sort">{{ popular.sort }}</th>
+			        					<th class="field-repo_name">{{ popular.repo_name }}</th>
+			        					<th class="field-stars">{{ popular.stars }}</th>
+			        				</tr>
+			        				{% endfor %}
+			        			</tbody>
+			    			</table>
+			    		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h5>Lista de los 10 Repositorios con más Colaboradores Colombianos en Github</h5>
+			<div class="card">
+			    <div class="card-content">
+			    	<div class="results">
+			    		<div id="result_list_wrapper" class="dataTables_wrapper no-footer">
+			    			<table id="result_list" class="table bordered dataTable no-footer" role="grid">
+			    				<thead>
+			            			<tr role="row">
+			                			<th scope="col" class="column-sort sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Ranking</span>
+			                    		</th>
+			                    		<th scope="col" class="column-repo_name sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Nombre del Repositorio</span>
+			                    		</th>
+			                    		<th scope="col" class="column-repo_description sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Descripción del Repositorio</span>
+			                    		</th>
+			                    		<th scope="col" class="column-collaborators sorting_enabled" rowspan="1" colspan="1">
+			                    			<span>Número de Colaboradores Colombianos</span>
+			                    		</th>
+			                    	</tr>
+			        			</thead>
+			        
+			        			<tbody>
+			        				{% for collaborator in collaborators_items_list %}
+			        				<tr class="row1 odd" role="row">
+			        					<th class="field-sort">{{ collaborator.sort }}</th>
+			        					<th class="field-repo_name">{{ collaborator.repo_name }}</th>
+			        					<th class="field-repo_description">{{ collaborator.repo_description }}</th>
+			        					<th class="field-collaborators">{{ collaborator.collaborators }}</th>
+			        				</tr>
+			        				{% endfor %}
+			        			</tbody>
+			    			</table>
+			    		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h5 class="right">Los datos estan tomados de BigQuery especialemente de la Bases de Datos de githubarchives y ghtorrent</h5>
+	<a href="{% url 'load' %}" class="btn">Recargar la Información</a>
+</main>
+
+<script src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
+{% include 'material/includes/material_js.html' %}
+
