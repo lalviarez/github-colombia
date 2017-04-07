@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "alkanza-163905",
+  "private_key_id": "9d897f03347402076cc7ea081407e9f9cbbbc86c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDNOSz0SA9QDf3P\nx/IQuRkR9EefHlz+lEhogPnwHQhr0Yd2EfHWr1saUq26inAYPPoAaRFNtjt4SUOs\nb9rUYDqvMjgs4CeKBnzEJvjzbkgP2kuxfQ0rcZX2A6AglbgwDLxzT7V3WBzuqJoU\nhhZ253wt9lsPdaXc5TTG/IF0TBkSp58LpfcbbHq1Bs0qCcncq1YPFY67GTTs2NBS\n5CIxZkD5nyT8VystLNDxwAnT2q5RxFWyMrWdlg7alsXmeowCom2J6BOvbR2m8PGM\nz871J25Y5UU1VMjEc2xXsnZttHVI1fWc/9dn6KoEgVQRi1g2Bf2iVorvewDrvFEI\npvyzo9tJAgMBAAECggEBAIgs+05xDnAhiJy6YT6FhEQsouXLwQtQm6d0heS1byQU\nGd3X1HCPVVVnLU5NlEoRFBb3oPq/BEEx5EzkwAEShX5BRZNJfhMRcPK7pY/qSrjy\nMi3o+7crHMXs6/ETR+/iU530c0Zo2nHmwK8Dtp5ZxkW9ZfkhKNkl4lpzrPbdk/mS\nvic0914Mx/O1iXuimJR0vtbop+JL00pJejqBFDaRgMXHTEUZQivggx7sFh3jWhMv\n8IGr8geh8y739OdZQeYhkVvUl1UsNVmhr72cl4+JN4GsgvWPNoC/QKCzwGWtl8me\nhgqIUq2cI8zEqB0aPpGpqetsF2iNFtln9OhA4O0vFDECgYEA6vkiHPqluJLkWt7/\nM0G4J0xsKCRVJO1SKfQGR8f+iYn3CEWRs2GL0QUpxWUqRo9BFnYQF6zVnJ2I5X5I\noItmh3Momk7m+DgHYvAJsa0s+8lwdZDvAeKnNPwppCPPDy7aWVDVNZu5u58vAmnx\nsyfOVm5qz4ndnOLqP/hx8g6UakUCgYEA35aFM+DbQZeAxpLcLOU40+3JHsCcb1Qe\n81jBGQUmAABUp4vadXCdXJYDpOZY/4HK/c+k+HJkLulUwS55S8WUMThPGYd/WAgI\nu0GaUME2dRwpso4UYqjBgwVldXBy68oz8AZ/8stxUgHU6CuUm4l/a/mcocGNW81A\nxbR2YNhVnzUCgYEAhgNlY2XJEsYkm3dH0fIPl8pMfXCLZy47iFX3JwV3tPYNAJi9\nCrP9zE7Hjh+uxuN5WdgoQXh/tH1c0Jb/0SDwbxxM8gVCUhuSiukgfkeoukofa84n\nosmkV+Hh1g3eUGiGfB5QG+0fN1UIuLW39lgjpMQBAzE8RfhdZfLK+iU6nIkCgYEA\njJYge1ZPhxa0Kif9uV0INnm1lFiYBIhoTaro/8p08ltC33bYji+ZQrYw5GbSXxZF\nhQIjQPTseXLNkAqgyjwZyjkVw3+nWrrygovldBGJJGno7hTYTJC/3JpwCUADgq9J\nqQrtOMUjI+Vy8ek1L/ds33+8NRl2wNp2d9nY9VwRumECgYEAuMES2wmXqy0Qqua7\nwAuJe+b282J4wKr+dyNnp3PsQ7RbQNUxfE3YcgOgMvyvglT9SB+SV20EsbjXlyVh\n9aJO3RVdDpdh3kSZBjib/3SBKRhn6YJeAN20qycAxdFwkG7XLIUnDhrHauTOO9A/\nL9Ui1opstFIqCBDpuDOYQpLEAdQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "alkanza@alkanza-163905.iam.gserviceaccount.com",
+  "client_id": "113989742294106822252",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alkanza%40alkanza-163905.iam.gserviceaccount.com"
+}
